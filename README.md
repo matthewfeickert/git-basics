@@ -89,7 +89,7 @@ and `dev`.
 ## Why?
 The idea here is that `master` should always be production ready and `dev` should be where
 the new feature that I'm working on it being tested. However, each day I don't want to
-possibly contaminate `dev`. So everday when I start work I do
+possibly contaminate `dev`. So everyday when I start work I (from the `dev` branch) do
 ~~~bash
 git checkout -b YYYY-MM-DD
 ~~~
