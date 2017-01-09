@@ -6,6 +6,9 @@ Use the web GUI to copy the URL to your clipboard and then clone it to your loca
 git clone <the URL you copied>
 cd my-repo
 ~~~
+
+![copy URL GitHub](/images/copyURL_GitHub.png)
+
 Create a `README` and [license](http://choosealicense.com/) for your repo
 ~~~bash
 touch README.md
@@ -29,7 +32,7 @@ git checkout -b dev
 ~~~
 Make an edit to the `README` such as
 ~~~bash
-This is an edit to the README!
+This is a local edit to the README!
 ~~~
 commit the change
 ~~~bash
@@ -39,9 +42,10 @@ git commit -m "Edit the README locally"
 We're going to purposely make a merge conflict later by going to GitHub/GitLab and making
 an edit to the `README` on the `master` branch on there
 ~~~bash
-This is an edit to the README from the web!
+This is an upstream edit to the README from the web!
 ~~~
-On local machine switch to master branch
+![upstream edit GitHub](/images/upstream-edit_GitHub.png)
+On your local machine switch to master branch
 ~~~bash
 git checkout master
 ~~~
@@ -66,7 +70,19 @@ Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 ~~~
-Edit the `README` to resolve the conflict then commit and push
+Edit the `README` to resolve the conflict:
+~~~bash
+<<<<<<< HEAD
+This is a local edit to the README!
+=======
+This is an upstream edit to the README from the web!
+>>>>>>> origin/master
+~~~
+to
+~~~bash
+This is a local edit to the README followed by an upstream edit to the README from the web!
+~~~
+Then commit and push
 ~~~bash
 git add README.md
 git commit -m "Resolve merge conflict"
