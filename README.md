@@ -7,7 +7,9 @@ git clone <the URL you copied>
 cd my-repo
 ~~~
 
-![copy URL GitHub](/images/copyURL_GitHub.png)
+GitHub                      |  GitLab
+:-------------------------: | :-------------------------:
+![copy URL GitHub](/images/copyURL_GitHub.png)  |  ![copy URL GitLab](/images/copyURL_GitLab.png)
 
 Create a `README` and [license](http://choosealicense.com/) for your repo
 ~~~bash
@@ -44,7 +46,11 @@ an edit to the `README` on the `master` branch on there
 ~~~bash
 This is an upstream edit to the README from the web!
 ~~~
-![upstream edit GitHub](/images/upstream-edit_GitHub.png)
+
+GitHub                      |  GitLab
+:-------------------------: | :-------------------------:
+![upstream edit GitHub](/images/upstream-edit_GitHub.png) | ![upstream edit GitHub](/images/upstream-edit_GitLab.png)
+
 On your local machine switch to master branch
 ~~~bash
 git checkout master
