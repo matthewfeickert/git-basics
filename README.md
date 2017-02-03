@@ -132,3 +132,30 @@ git checkout dev
 git branch -d YYYY-MM-DD
 ~~~
 and walk away with no damages to try again tomorrow. :)
+
+# Basic Git Configuration
+It is very helpful to have a [`.gitconfig` file](https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration). You can have a
+global one that sets defaults on all git repositories (`~/.gitconfig`) and then repository
+specific `.gitconfig` files as well.
+
+To start with, make sure that you have a global `.gitconfig` that sets your username and
+email.
+~~~bash
+git config --global user.name "Firstname LastName"
+git config --global user.email "yourEmail@email.com"
+~~~
+To check the settings of your `.gitconfig` you can either just list it out
+~~~bash
+cat ~/.gitconfig
+~~~
+or you can query it for specific commands
+~~~bash
+git config user.name
+~~~
+
+## Helpful aliases
+I would also recommend setting up the following aliases
+~~~bash
+git config --global alias.pl "pull --rebase"
+git config --global alias.glog "log --graph --oneline --decorate --all"
+~~~
