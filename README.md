@@ -186,7 +186,7 @@ git diff README.md
 we see at the bottom the addition
 
 ```bash
-This is an edit
+ This is an edit
  This is another edit
 +What has changed
 ```
@@ -200,7 +200,7 @@ git diff HEAD^ -- README.md
 we get
 
 ```bash
-This is an edit
+ This is an edit
 +This is another edit
 +What has changed
 ```
@@ -237,7 +237,7 @@ If we decide we want to go back to the state before we made our three consecutiv
 git checkout HEAD^^ -- README.md
 ```
 
-and `git diff` or `git cat README.md` will reveal have recovered the state of the `README` before we made the edits.
+and `git diff` or `cat README.md` will reveal have recovered the state of the `README` before we made the edits.
 
 - **N.B.:** We have recovered the _state_ of the `README` but we have not undone our commits. Simply checking `git log` shows us this.
 # Example of Matthew's daily workflow
@@ -279,30 +279,3 @@ git branch -d YYYY-MM-DD
 ```
 
 and walk away with no damages to try again tomorrow. :)
-
-# Basic Git Configuration
-It is very helpful to have a [`.gitconfig` file](https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration). You can have a
-global one that sets defaults on all git repositories (`~/.gitconfig`) and then repository
-specific `.gitconfig` files as well.
-
-To start with, make sure that you have a global `.gitconfig` that sets your username and
-email.
-~~~bash
-git config --global user.name "Firstname LastName"
-git config --global user.email "yourEmail@email.com"
-~~~
-To check the settings of your `.gitconfig` you can either just list it out
-~~~bash
-cat ~/.gitconfig
-~~~
-or you can query it for specific commands
-~~~bash
-git config user.name
-~~~
-
-## Helpful aliases
-I would also recommend setting up the following aliases
-~~~bash
-git config --global alias.pl "pull --rebase"
-git config --global alias.glog "log --graph --oneline --decorate --all"
-~~~
