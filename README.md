@@ -111,7 +111,7 @@ On your local machine switch to master branch
 git checkout master
 ```
 
-merge<sup>[1](#drjmfootnote)</sup> the changes made in `dev` onto `master`
+merge<sup id="ref1">[1](#footnote1)</sup> the changes made in `dev` onto `master`
 
 ```bash
 git merge dev
@@ -281,4 +281,4 @@ git branch -d YYYY-MM-DD
 and walk away with no damages to try again tomorrow. :)
 
 ---
-<a name="drjmfootnote">1</a>) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314)
+<a name="footnote1">1</a>) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314) [↩](#ref1)
