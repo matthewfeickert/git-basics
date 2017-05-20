@@ -54,9 +54,9 @@ git clone <the URL you copied>
 cd my-repo
 ```
 
-GitHub                                         | GitLab
-:--------------------------------------------- | :---------------------------------------------
-![copy URL GitHub](/images/copyURL_GitHub.png) | ![copy URL GitLab](/images/copyURL_GitLab.png)
+GitHub                                          | GitLab
+:---------------------------------------------: | :---------------------------------------------:
+![copy URL GitHub](/images/copyURL_GitHub.png)  | ![copy URL GitLab](/images/copyURL_GitLab.png)
 
 Create a `README` and [license](http://choosealicense.com/) for your repo
 
@@ -105,9 +105,9 @@ We're going to purposely make a merge conflict later by going to GitHub/GitLab a
 This is an upstream edit to the README from the web!
 ```
 
-GitHub                                                    | GitLab
-:-------------------------------------------------------- | :--------------------------------------------------------
-![upstream edit GitHub](/images/upstream-edit_GitHub.png) | ![upstream edit GitHub](/images/upstream-edit_GitLab.png)
+GitHub                                                     | GitLab
+:--------------------------------------------------------: | :--------------------------------------------------------:
+![upstream edit GitHub](/images/upstream-edit_GitHub.png)  | ![upstream edit GitHub](/images/upstream-edit_GitLab.png)
 
 On your local machine switch to master branch
 
@@ -115,13 +115,7 @@ On your local machine switch to master branch
 git checkout master
 ```
 
-merge
-
-<sup id="ref1">
-  <a href="#footnote1">1</a>
-</sup>
-
-the changes made in `dev` onto `master`
+merge<sup id="ref1"><a href="#footnote1">1</a></sup> the changes made in `dev` onto `master`
 
 ```bash
 git merge dev
@@ -294,4 +288,4 @@ and walk away with no damages to try again tomorrow. :)
 
 --------------------------------------------------------------------------------
 
-[1]())) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314) [↩](#ref1)
+<a name="footnote1">1</a>) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314) [↩](#ref1)
