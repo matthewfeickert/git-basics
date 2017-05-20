@@ -42,6 +42,9 @@ I would also recommend setting up the following aliases
 git config --global alias.pl "pull --rebase"
 git config --global alias.glog "log --graph --oneline --decorate --all"
 ```
+
+For more high-powered Git aliases I'd recommend [Tim Pettersen](https://www.linkedin.com/in/tim-pettersen-5833974/)'s [Git Merge 2017 talk](https://youtu.be/3IIaOj1Lhb0).
+
 # This is a walkthrough of how to do some basic things in Git
 
 On GitHub/GitLab make a new repo called `my-repo`. Use the web GUI to copy the URL to your clipboard and then clone it to your local machine
