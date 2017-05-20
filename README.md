@@ -54,9 +54,9 @@ git clone <the URL you copied>
 cd my-repo
 ```
 
-GitHub                      |  GitLab
-:-------------------------: | :-------------------------:
-![copy URL GitHub](/images/copyURL_GitHub.png)  |  ![copy URL GitLab](/images/copyURL_GitLab.png)
+GitHub                                         | GitLab
+:--------------------------------------------- | :---------------------------------------------
+![copy URL GitHub](/images/copyURL_GitHub.png) | ![copy URL GitLab](/images/copyURL_GitLab.png)
 
 Create a `README` and [license](http://choosealicense.com/) for your repo
 
@@ -105,16 +105,23 @@ We're going to purposely make a merge conflict later by going to GitHub/GitLab a
 This is an upstream edit to the README from the web!
 ```
 
-GitHub                      |  GitLab
-:-------------------------: | :-------------------------:
+GitHub                                                    | GitLab
+:-------------------------------------------------------- | :--------------------------------------------------------
 ![upstream edit GitHub](/images/upstream-edit_GitHub.png) | ![upstream edit GitHub](/images/upstream-edit_GitLab.png)
+
 On your local machine switch to master branch
 
 ```bash
 git checkout master
 ```
 
-merge<sup id="ref1">[1](#footnote1)</sup> the changes made in `dev` onto `master`
+merge
+
+<sup id="ref1">
+  <a href="#footnote1">1</a>
+</sup>
+
+the changes made in `dev` onto `master`
 
 ```bash
 git merge dev
@@ -160,6 +167,7 @@ git add README.md
 git commit -m "Resolve merge conflict"
 git push origin master
 ```
+
 # Edits, Diffs, and Resets
 
 Suppose we make several commits to the `README`
@@ -243,7 +251,8 @@ git checkout HEAD^^ -- README.md
 and `git diff` or `cat README.md` will reveal have recovered the state of the `README` before we made the edits.
 
 - **N.B.:** We have recovered the _state_ of the `README` but we have not undone our commits. Simply checking `git log` shows us this.
-# Example of Matthew's daily workflow
+
+  # Example of Matthew's daily workflow
 
 Every directory on my local computer that has code in it is a Git repo. A typical snapshot of what that looks like is
 
@@ -283,5 +292,6 @@ git branch -d YYYY-MM-DD
 
 and walk away with no damages to try again tomorrow. :)
 
----
-<a name="footnote1">1</a>) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314) [↩](#ref1)
+--------------------------------------------------------------------------------
+
+[1]())) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314) [↩](#ref1)
