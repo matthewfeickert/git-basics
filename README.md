@@ -277,7 +277,7 @@ git branch -d YYYY-MM-DD
 
 so dev reflects the day's improvements and as `YYYY-MM-DD` has served its purpose it is removed.
 
-If everything has become a raging dumpster fire (it is 2016 when I'm writing this, so there should _really_ be a raging dumpster fire emoji) I can instead do
+If everything has become a raging dumpster fire (it is 2016 when I'm writing this, so there should _really_ be a raging dumpster fire emoji<sup id="ref2"><a href="#footnote2">2</a></sup> 🗑 🔥) I can instead do
 
 ```bash
 git checkout dev
@@ -289,3 +289,5 @@ and walk away with no damages to try again tomorrow. :)
 --------------------------------------------------------------------------------
 
 <a name="footnote1">1</a>) Please though, [never DR;JM](https://twitter.com/elijahmanor/status/712727395913101314) [↩](#ref1)
+
+<a name="footnote2">2</a>) [Courtesy of Meghan Kane, 2017](https://twitter.com/meghafon/status/867137131248054272) [↩](#ref2)
