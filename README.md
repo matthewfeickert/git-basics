@@ -39,8 +39,9 @@ git config user.name
 I would also recommend setting up the following aliases
 
 ```bash
-git config --global alias.pl "pull --rebase"
-git config --global alias.glog "log --graph --oneline --decorate --all"
+git config --global alias.pl 'pull --rebase'
+git config --global alias.glog 'log --graph --oneline --decorate --all'
+git config --global alias.fstatus '!git fetch && git status'
 ```
 
 For more high-powered Git aliases I'd recommend [Tim Pettersen](https://www.linkedin.com/in/tim-pettersen-5833974/)'s [Git Merge 2017 talk](https://youtu.be/3IIaOj1Lhb0).
