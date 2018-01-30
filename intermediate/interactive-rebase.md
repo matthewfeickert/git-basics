@@ -4,6 +4,8 @@ There are many times when you are developing a feature and you're just trying to
 
 We can do this by interactively rebasing our feature branch to squash the commits and then merging onto master.
 
+>N.B.: This walkthrough assumes that you have defined the git aliases<sup id="ref1"><a href="#footnote1">1</a></sup> used in the ["basics" walkthrough](https://github.com/matthewfeickert/git-basics).
+
 ## Interactive rebase
 
 First, it goes without saying that you should read the Git book sections on ["Rebasing"](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) and ["Rewriting History"](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
@@ -18,7 +20,7 @@ $ git branch
   master
 ```
 
-We have been working on our feature and add a few commits to `feature`<sup id="ref1"><a href="#footnote1">1</a></sup>
+We have been working on our feature and add a few commits to `feature`
 
 ```
 $ git glog
