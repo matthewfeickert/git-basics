@@ -45,6 +45,7 @@ git config --global alias.fstatus '!git fetch -p && git status'
 git config --global alias.ftag '!git tag -d $(git tag) > /dev/null 2>&1 && git fetch --tags > /dev/null 2>&1 && git tag'
 git config --global alias.incoming '!f() { git fetch && git log ..origin/$(git rev-parse --abbrev-ref HEAD); }; f'
 git config --global alias.outgoing '!f() { git fetch && git log origin/$(git rev-parse --abbrev-ref HEAD)..; }; f'
+git config --global alias.last-files '!f() { git show --name-only $(git rev-parse HEAD); }; f'
 ```
 
 For more high-powered Git aliases I'd recommend [Tim Pettersen](https://www.linkedin.com/in/tim-pettersen-5833974/)'s [Git Merge 2017 talk](https://youtu.be/3IIaOj1Lhb0).
